@@ -1,21 +1,28 @@
 .footer{
 	background: #4a4a4a;
 	height: $footer-height;
-	margin-top: 50px;
+	margin-top: 56px;
 
 	.container {
 		display: flex;
 		justify-content: space-between;
-		padding: 30px 20px;
+		padding: 54px 20px;
 	}
 	&__left {
 		
 		img {
-			width: 100px;
+			width: 135px;
+			margin-bottom: 3px;
 		}
 	}
 	&__right {
-	
+		padding-top: 12px;
+		.footer__text {
+			margin-bottom: 11px;
+			a {
+				margin-left: 9px;
+			}
+		}
 	}
 	&__text {
 		font-family: Lato;

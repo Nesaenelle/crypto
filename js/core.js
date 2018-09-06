@@ -8,6 +8,11 @@
         return this;
     };
 
+    ELEM.prototype.removeEvent = function(type, fn) {
+        this.el.removeEventListener(type, fn, false);
+        return this;
+    };
+
     ELEM.prototype.addClass = function(className) {
         this.el.classList.add(className);
         return this;

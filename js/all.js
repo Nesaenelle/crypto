@@ -51,8 +51,8 @@
             this.updateArrows();
         },
         updateArrows() {
-            this.activeIndex == 1 ? this.leftArrow.hide() : this.leftArrow.show();
-            this.activeIndex == this.tabs.length ? this.rightArrow.hide() : this.rightArrow.show();
+            this.activeIndex == 1 ? this.leftArrow.addClass('hidden') : this.leftArrow.removeClass('hidden');
+            this.activeIndex == this.tabs.length ? this.rightArrow.addClass('hidden') : this.rightArrow.removeClass('hidden');
         }
     });
 
@@ -93,6 +93,7 @@
             if (this.activeModal) {
                 this.activeModal.removeClass('opened');
                 this.modalOverlay.removeClass('opened');
+                this.activeModal.find('.btn').removeEvent('click', this.onBtnClick.bind(this));
             }
         },
 
@@ -103,21 +104,11 @@
             this.activeModal = $.find('.modal[data-modal="' + id + '"]');
             this.activeModal.addClass('opened');
 
-            if (id === 'sign-in') {
-                var formInst = new Form(this.activeModal.find('#sign-in-form').el);
-                formInst.onSubmit(function() {
-                    $.find('.dashboard-auth').addClass('authorized');
-                    self.closeModal();
-                });
-            }
+            this.activeModal.find('.btn').addEvent('click', this.onBtnClick.bind(this));
+        }, 
 
-            if (id === 'sign-up') {
-                var formInst = new Form(this.activeModal.find('#sign-up-form').el);
-                formInst.onSubmit(function() {
-                    // $.find('.dashboard-auth').addClass('authorized');
-                    self.closeModal();
-                });
-            }
+        onBtnClick: function() {
+            this.closeModal();
         }
     });
 

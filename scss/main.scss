@@ -11,7 +11,7 @@ main {
 }
 
 .container {
-    max-width: 1280px;
+    max-width: 1150px;
     padding: 0 20px;
     margin: auto;
 }
@@ -48,6 +48,7 @@ main {
         position: relative;
         display: flex;
         align-items: center; // justify-content: space-between;
+        padding-left: 114px;
     }
     &__text {
         cursor: pointer;
@@ -60,7 +61,7 @@ main {
     }
     &__btn {
         cursor: pointer;
-        margin-right: 40px;
+        margin-right: 17px;
         img {
             width: 80px;
         }
@@ -69,22 +70,25 @@ main {
 
 .bonus {
     position: absolute;
-    top: -40px;
-    right: 0;
+    top: -42px;
+    right: 20px;
     background: #023753;
-    padding: 20px;
+    padding: 13px 20px 13px 30px;
     display: flex;
     align-items: center;
+    width: 474px;
+
     &__text {
         font-family: BebasNeue;
         font-size: 24px;
         font-weight: bold;
         letter-spacing: 1.5px;
+        line-height: 30px;
         color: #ffffff;
         text-transform: uppercase;
     }
     &__title {
-        margin-right: 15px;
+        margin-right: 18px;
         height: 43px;
         font-family: BebasNeue;
         font-size: 36px;
@@ -95,11 +99,14 @@ main {
 }
 
 .usefull {
-    margin-top: 100px;
+    margin-top: 71px;
+    .title-2 {
+        margin-top: 27px;
+    }
     &__list {
         display: flex;
         justify-content: space-between;
-
+        padding-right: 30px;
         &_item {
             width: calc(100%/3 - 50px);
             $c: &;
@@ -121,23 +128,24 @@ main {
                 font-size: 36px;
                 line-height: 1.06;
                 color: #050d31;
+                padding: 14px 0;
                 text-transform: uppercase;
                 position: relative;
                 &:after {
                     content: '';
                     position: absolute;
                     background-color: #f3f3f3;
-                    width: 100%;
+                    width: 98%;
                     height: 100%;
                     top: 0;
-                    left: 50px;
+                    left: 37px;
                     z-index: -1;
                 }
             }
             &_img {
                 margin: auto;
                 width: 250px;
-                height: 250px;
+                height: 253px;
                 background-size: cover!important;
                 transition: background 0.3s ease;
                 &.first {
@@ -164,7 +172,7 @@ main {
 }
 
 .advantages {
-    margin-top: 100px;
+    margin-top: 70px;
     .container {
         position: relative;
     }
@@ -173,28 +181,59 @@ main {
     }
     &__wrapper {
         display: flex;
-        margin-top: 40px;
+        margin-top: 30px;
         .title-2 {
             width: 50%;
             text-align: right;
+            margin-top: -10px;
         }
     }
     &__list {
-        top: 200px;
+        padding-top: 30px;
+        top: 203px;
         width: 599px;
         background: #fff;
-        right: 0;
+        right: 20px;
         position: absolute;
         z-index: 10;
-        box-shadow: 0 0 10px 0px #000;
+        box-shadow: 0 0 10px 0 #000;
         border-radius: 3px;
         overflow: hidden;
         &_item {
-            padding: 15px;
+            padding: 15px 15px 15px 40px;
             display: flex;
-            img {
-                height: 50px;
-                width: 50px;
+            $c: &;
+            &:nth-child(1) #{$c}_img {
+                background: url(../img/svg/web.svg);
+                background-size: cover;
+            }
+            &:nth-child(2) #{$c}_img {
+                background: url(../img/svg/close.svg);
+                background-size: cover;
+            }
+            &:nth-child(3) #{$c}_img {
+                background: url(../img/svg/faq.svg);
+                background-size: cover;
+            }
+            &:nth-child(4) #{$c}_img {
+                background: url(../img/svg/homework.svg);
+                background-size: cover;
+            }
+            &_img {
+                min-width: 60px;
+                height: 60px;
+                margin-right: 3px;
+            }
+            &_title {
+
+                font-family: Lato;
+                font-size: 18px;
+                letter-spacing: 0.5px;
+                color: #9b9b9b;
+                b {
+                    color: #023753;
+                    display: block;
+                }
             }
         }
     }
@@ -205,34 +244,39 @@ main {
         }
     }
     .bonus {
+        width: 100%;
         position: static;
     }
 }
 
 .ranks {
-    margin-top: 200px;
+    margin-top: 211px;
+    .title-2 {
+        margin-top: 38px;
+    }
+
     &__steps {
-        padding: 0 50px;
-        margin-top: 50px;
+        padding: 0 95px;
+        margin-top: 68px;
         user-select: none;
         &_content {
             background: rgba(155, 155, 155, 0.1);
             height: 475px;
             padding: 30px;
             position: relative;
-            margin-top: 10px;
+            margin-top: 15px;
         }
         &_tabs {
             display: flex;
             &_item {
-                margin-right: 15px;
+                margin-right: 36px;
                 font-family: BebasNeue;
                 font-size: 18px;
-                font-weight: bold;
+                font-weight: 700;
                 letter-spacing: 2px;
                 color: #023753;
                 cursor: pointer;
-                transition: 0.3s;
+                transition: .3s;
                 text-transform: uppercase;
                 &.active {
                     color: #f48a31;
@@ -247,7 +291,7 @@ main {
                 top: 0;
                 margin: auto;
                 bottom: 0;
-                height: 20px;
+                height: 14px;
                 width: 26px;
                 cursor: pointer;
                 transition: 0.1s;
@@ -264,6 +308,10 @@ main {
                     top: -10px;
                     left: -10px;
                     position: absolute;
+                }
+                &.hidden {
+                    opacity: 0;
+                    visibility: hidden;
                 }
             }
             &_left {
@@ -285,19 +333,25 @@ main {
                 line-height: 170px;
                 font-weight: bold;
                 color: #d8d8d8;
-                top: 50px;
-                left: 20px;
+                top: 64px;
+                left: 30px;
+                // letter-spacing: -30px;
                 pointer-events: none;
             }
             ul {
-                margin-top: 220px;
-                margin-left: 100px;
+                margin-top: 208px;
+                margin-left: 111px;
+                position: relative;
                 li {
                     font-family: 'Lato';
-                    font-size: 24px;
-                    line-height: 1.46;
+                    font-size: 24px; // line-height: 1.46;
                     letter-spacing: 1.5px;
                     color: #4a4a4a;
+                    line-height: 32px;
+                    b {
+                        font-size: 32px;
+                        margin-right: 4px;
+                    }
                 }
             }
         }
@@ -305,12 +359,14 @@ main {
     &__descr {
         font-family: BebasNeue;
         font-size: 36px;
-        font-weight: bold;
+        font-weight: 700;
         line-height: 1.5;
         letter-spacing: 1px;
         color: #023753;
-        margin-top: 40px;
+        margin-top: 67px;
         text-transform: uppercase;
+        margin: 67px auto 0;
+        width: 83%;
     }
     &__subscribe {
 
@@ -319,9 +375,11 @@ main {
         font-weight: bold;
         letter-spacing: 3.6px;
         color: #f48a31;
-        margin: 20px 0 10px 0;
+        margin: 26px 0px 4px 96px;
+        width: 83%;
         img {
             height: 20px;
+            margin-left: 10px;
             width: 26px;
         }
     }
@@ -330,12 +388,16 @@ main {
 
 .main-form {
     background: #f48a31;
-    padding: 10px;
+    padding: 13px 17px 14px 21px;
     width: 860px;
     justify-content: space-between;
     display: flex;
     &.secondary {
         background: none;
+        margin: auto;
+    }
+    .btn {
+        width: 115px;
     }
     input {
 

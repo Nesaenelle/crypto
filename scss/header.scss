@@ -3,16 +3,44 @@
     background-size: cover;
     background-position: center;
     height: $header-height;
-    padding-top: 50px;
-
+    padding-top: 55px;
+    background-position: center;
+    
     .container {
         display: flex;
         justify-content: space-between;
-        flex-wrap: wrap;
-        // position: relative;
+        flex-wrap: wrap; // position: relative;
+        &.top {
+            padding: 0 20px 0 14px;
+        }
+        &.middle {
+            padding-top: 63px;
+            padding-left: 180px;
+            position: relative;
+        }
+        &.bottom {
+            justify-content: flex-end;
+        }
+    }
+    .socials {
+        position: absolute;
+        display: flex;
+        justify-content: space-between;
+        left: 0;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+        transform: rotate(90deg);
+        width: 140px;
+        height: 0;
+        transform-origin: left top 0;
+         a{
+            font-size: 10px;
+            color: #023753;
+         }
     }
     .logo {
-        width: 200px;
+        width: 155px;
         img {
             width: 100%;
         }
@@ -25,10 +53,10 @@
         color: #023753;
         text-transform: uppercase;
         width: 100%;
-        margin-top: 100px;
     }
     .title {
-        margin-top: 30px;
+        margin-top: 21px;
+        width: 65%;
         font-family: BebasNeue;
         font-size: 74px;
         font-weight: bold;
@@ -38,14 +66,22 @@
     }
     ul {
         width: 100%;
+        margin-top: 41px;
+        margin-left: -6px;
+
         li {
             font-family: Lato;
             font-size: 18px;
             font-weight: 600;
-
-            line-height: 1.33;
-
+            line-height: 24px;
             color: #023753;
+            position: relative;
+            display: flex;
+            align-items: center;
+            b {
+                font-size: 28px;
+                margin-right: 14px;
+            }
         }
     }
     .phone {
@@ -58,17 +94,11 @@
         font-weight: bold;
         letter-spacing: 3.3px;
         text-align: center;
-        // -webkit-background-clip: text;
+        padding: 25px 10px 0 0;
         // background-clip: text;
         // -webkit-text-fill-color: transparent;
     }
     .main-form {
-        // width: 100%;
-        margin-top: 100px;
-        // float: right;
-        // input {
-        //     border-radius: 2px;
-        //     border: solid 1px #215878;
-        // }
+        margin-top: 78px;
     }
 }
