@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 21.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 80 80" style="enable-background:new 0 0 80 80;" xml:space="preserve">
+<style type="text/css">
+	.st0{fill:none;stroke:url(#Oval-3_1_);}
+	.st1{fill:url(#Oval-3-Copy_1_);}
+	.st2{fill:#FFFFFF;}
+</style>
+<g id="Page-1">
+	<g id="Desktop_1_v3-popup_THX" transform="translate(-239.000000, -715.000000)">
+		<g id="video" transform="translate(0.000000, 686.000000)">
+			<g id="Video-Button" transform="translate(240.000000, 30.000000)">
+				<g id="Group-21">
+					
+						<linearGradient id="Oval-3_1_" gradientUnits="userSpaceOnUse" x1="29.1154" y1="42.4615" x2="29.1154" y2="41.4615" gradientTransform="matrix(78 0 0 -78 -2232 3312)">
+						<stop  offset="0" style="stop-color:#FAD961"/>
+						<stop  offset="1" style="stop-color:#F76B1C"/>
+					</linearGradient>
+					<circle id="Oval-3" class="st0" cx="39" cy="39" r="39"/>
+					
+						<linearGradient id="Oval-3-Copy_1_" gradientUnits="userSpaceOnUse" x1="29.0455" y1="42.5455" x2="29.0455" y2="41.5455" gradientTransform="matrix(66 0 0 -66 -1878 2814)">
+						<stop  offset="0" style="stop-color:#FAD961"/>
+						<stop  offset="1" style="stop-color:#F76B1C"/>
+					</linearGradient>
+					<circle id="Oval-3-Copy" class="st1" cx="39" cy="39" r="33"/>
+					<polygon id="Triangle" class="st2" points="51,39 35,53 35,25 					"/>
+				</g>
+			</g>
+		</g>
+	</g>
+</g>
+</svg>

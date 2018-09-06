@@ -1,0 +1,292 @@
+/* MOBILES */
+
+// .desktop {
+//     display: block;
+// }
+// .mobile {
+//     display: none;
+// }
+@media screen and (max-width: 1800px) {}
+
+@media screen and (max-width: 1600px) {
+    .dashboard-pairs {
+        width: 69%;
+    }
+}
+
+@media screen and (max-width: 1440px) {
+    .dashboard-pairs {
+        .table .table-body__col {
+            font-size: 12px;
+        }
+    }
+}
+
+@media screen and (max-width: 1280px) {
+    main {
+        margin-bottom: 8px;
+    }
+    .dashboard-header {
+        height: 85px;
+        .dashboard-balance,
+        .dashboard-pairs {
+            display: none;
+        }
+    }
+    .dashboard-auth {
+        padding-right: 10px;
+    }
+    .dashboard-status {
+        padding-left: 30px;
+    }
+    .dashboard-auth,
+    .dashboard-status {
+        width: 100%;
+    }
+    .dashboard-header__right {
+        justify-content: flex-end;
+    }
+    .dashboard-container__left {
+        width: 100%;
+    }
+    .dashboard-container__right {
+        width: 100%;
+        margin-top: 8px;
+    }
+    .dashboard-pairs .table {
+        width: 100%;
+        padding-left: 40px;
+    }
+    .dashboard-orders {
+        height: 396px;
+    }
+    .dashboard-limit {
+        margin-top: 0;
+        height: 340px;
+    }
+    .mobile-sub-header {
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+        margin-bottom: 8px;
+        padding: 0 10px 10px 10px;
+        .dashboard-pairs {
+            width: 100%;
+            margin-bottom: 8px;
+        }
+        .dashboard-balance {
+            width: 100%;
+        }
+    }
+    .dashboard-pairs .table .table-body__col {
+        font-size: 14px;
+    }
+
+    body {
+        padding: 8px 3px 10px;
+    }
+    .dashboard-header {
+        margin-bottom: 0;
+    }
+
+    .dashboard-chart {
+        height: 524px;
+        padding: 14px 10px 14px 10px;
+    }
+
+    .dashboard-trade-history,
+    .dashboard-trade-log {
+        height: 524px;
+        width: calc(50% - 4px);
+    }
+    .dashboard-container__bottom {
+        flex-direction: column-reverse;
+    }
+}
+
+@media screen and (max-width: 980px) {
+
+}
+
+@media screen and (max-width: 860px) {
+    .dashboard-orders {
+        .scroller-x {
+            overflow: auto;
+        }
+        .table {
+            min-width: 700px;
+        }
+        .table.col-8 .table-body__col, .table.col-8 .table-head__col {
+            &:nth-child(2){
+                width: 55px;
+            }
+            &:nth-child(3){
+                width: 35px;
+            }
+            &:nth-child(7){
+                width: 50px;
+            }
+            &:nth-child(8){
+                width: 80px;
+            }
+        }
+        .table.col-9 .table-body__col, .table.col-9 .table-head__col {
+            &:nth-child(1){
+                width: 70px;
+            }
+            &:nth-child(2){
+                width: 50px;
+            }
+            &:nth-child(3){
+                width: 25px;
+            }
+            &:nth-child(7){
+                width: 50px;
+            }
+            &:nth-child(8){
+                width: 40px;
+            }
+            &:nth-child(9){
+                width: 45px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .dashboard-status {
+        // padding-left: 0;
+    }
+    .dashboard-auth {
+        // padding-right: 0;
+    } // .dashboard-block {
+    //     padding: 10px;
+    // }
+    .dashboard-container__right {
+        flex-wrap: wrap;
+    }
+
+    .dashboard-pairs .table .table-body__col {
+        font-size: 12px;
+    }
+    .dashboard-pairs {
+        padding: 10px;
+    }
+    .dashboard-pairs {
+        .scroll-x {
+            width: 100%;
+            overflow: auto;
+        }
+        .table {
+            min-width: 430px;
+        }
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .dashboard-trade-log {
+        width: 100%;
+        margin-bottom: 8px;
+    }
+    .dashboard-trade-history {
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width: 600px) {
+    .dashboard-limit {
+        height: auto;
+        &__wrapper {
+            height: auto;
+        }
+        .dashboard-limit__buy {
+            margin-bottom: 8px;
+            width: 100%;
+        }
+        .dashboard-limit__sell {
+            width: 100%;
+        }
+        .simplebar-content {
+            height: 100%;
+            margin-bottom: 10px;
+            display: block;
+            margin: 0!important;
+            padding: 0!important;
+            overflow: hidden!important;
+        }
+        .simplebar-scroll-content {
+            overflow: hidden!important;
+            margin: 0!important;
+            padding: 0!important;
+        }
+    }
+
+    .table-filter {
+        flex-wrap: wrap;
+        overflow: hidden;
+    }
+    .dashboard-pairs {
+        height: auto;
+        flex-wrap: wrap;
+        .table {
+            margin-top: 8px;
+            width: 100%;
+            padding-left: 0;
+        }
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        padding: 0;
+    }
+    main {
+        margin: 0;
+    }
+    .dashboard-header__left {
+        width: 100%;
+    }
+    .dashboard-header__right {
+        width: 100%;
+    }
+    .dashboard-status__right {
+        // display: none;
+    }
+    .dashboard-status {
+        padding-left: 0;
+    }
+    .dashboard-header {
+        padding: 12px 0;
+        flex-wrap: wrap;
+        height: auto;
+    }
+    .dashboard-status {
+        flex-wrap: wrap;
+        justify-content: center;
+        .btn {
+            padding: 0 6px;
+            position: absolute;
+            left: 20px;
+            top: 25px;
+        }
+        &__time {
+            margin-bottom: 5px;
+        }
+    }
+    .dashboard-logo {
+        margin: 0;
+    }
+    .dashboard-status__right {
+        width: 100%;
+        text-align: center;
+    }
+    .dashboard-auth {
+        justify-content: center;
+    }
+    .dashboard-auth__buttons {
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 375px) {}

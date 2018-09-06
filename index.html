@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>dashboard</title>
+    <link rel="stylesheet" href="style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
+    <!--     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
+<!--     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&amp;subset=latin-ext" rel="stylesheet"> -->
+</head>
+
+<body>
+    <header class="header">
+        <!-- <div data-modal-open="sign-in">213</div> -->
+        <div class="container">
+            <div class="logo"><img src="img/png/logo.png" alt=""></div>
+            <div class="phone"><a href="tel:+380999999999">+38 099 999 99 99 </a></div>
+        </div>
+        <div class="container">
+            <div class="subtitle">Mates Academy & Alex Nazarov</div>
+            <h1 class="title">Курс Крипто-трейдинга с нуля</h1>
+            <ul>
+                <li>• Профессиональные консультации</li>
+                <li>• Помощь новичкам после курса</li>
+                <li>• Обучение Криптотрейдингу</li>
+            </ul>
+            <form class="main-form">
+                <input name="login" type="text" placeholder="Ваше имя" data-pattern="login" data-error-text="Недопустимый формат имени">
+                <input name="phone" class="phone-input" type="text" placeholder="Ваше телефон" data-pattern="phone" data-error-text="Недопустимый формат номера">
+                <input name="email" type="text" placeholder="Ваше email" data-pattern="email" data-error-text="Недопустимый формат email">
+                <button class="btn">ЗАПИСАТЬСЯ</button>
+            </form>
+        </div>
+    </header>
+    <main>
+        <div class="video-banner">
+            <div class="container">
+                <div class="bonus">
+                    <div class="bonus__title">+БОНУС</div>
+                    <div class="bonus__text">
+                        Использование CryptoBOT PRO месяц бесплатно
+                    </div>
+                </div>
+                <div class="video-banner__btn" data-modal-open="video"><img src="img/svg/play.svg" alt=""></div>
+                <div class="video-banner__text" data-modal-open="video">Смотреть первый бесплатный вебинар</div>
+            </div>
+        </div>
+        <div class="usefull">
+            <div class="container">
+                <div class="title-small">наши будущие студенты</div>
+                <h2 class="title-2">Кому будет полезен этот курс?</h2>
+                <div class="usefull__list">
+                    <div class="usefull__list_item">
+                        <div class="usefull__list_item_img first"></div>
+                        <div class="usefull__list_item_text">кто Имеет небольшой опыт в трейдинге</div>
+                    </div>
+                    <div class="usefull__list_item">
+                        <div class="usefull__list_item_img second"></div>
+                        <div class="usefull__list_item_text">кто Имеет стартовый депозит от 100$</div>
+                    </div>
+                    <div class="usefull__list_item">
+                        <div class="usefull__list_item_img third"></div>
+                        <div class="usefull__list_item_text">кто Хочет приумножить свой капитал</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="advantages">
+            <div class="container">
+                <div class="title-small">Учится! учится! Учится!</div>
+                <div class="advantages__wrapper">
+                    <div class="advantages__bg">
+                        <img src="img/png/adult-beautiful.jpg" alt="">
+                    </div>
+                    <h2 class="title-2">Преимущества нашего курса</h2>
+                    <div class="advantages__list">
+                        <div class="advantages__list_item">
+                            <img src="img/svg/web.svg" alt="">
+                            <div>Вебинары Еженедельные обучающие тренинги. Тренды и тенденции</div>
+                        </div>
+                        <div class="advantages__list_item">
+                            <img src="img/svg/close.svg" alt="">
+                            <div>Доступ к закрытой группе курса Тематические обсуждения и общение с преподавателями</div>
+                        </div>
+                        <div class="advantages__list_item">
+                            <img src="img/svg/faq.svg" alt="">
+                            <div>F.A.Q. Доступ к базе терминов и ответов на вопросы по тематике курса</div>
+                        </div>
+                        <div class="advantages__list_item">
+                            <img src="img/svg/homework.svg" alt="">
+                            <div>Практика со студентами Еженедельные задания с дальнейшей проверкой и обсуждением ошибок</div>
+                        </div>
+                        <div class="bonus">
+                            <div class="bonus__title">+БОНУС</div>
+                            <div class="bonus__text">
+                               аналитика ТОП 10 монет, в которые стоит вложить средства до конца года
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div></div>
+            </div>
+        </div>
+        <div class="ranks">
+            <div class="container">
+                <div class="title-small">Ваши будущие скиллы</div>
+                <h2 class="title-2">Какие зания вы получите, Пройдя наш курс? </h2>
+                <div class="ranks__steps" data-slider>
+                    <div class="ranks__steps_tabs">
+                        <div class="ranks__steps_tabs_item active" data-slider-tab="1">Фундаментальный анализ</div>
+                        <div class="ranks__steps_tabs_item" data-slider-tab="2">технический анализ</div>
+                        <div class="ranks__steps_tabs_item" data-slider-tab="3">теория расчетов</div>
+                        <div class="ranks__steps_tabs_item" data-slider-tab="4">практика и инструменты</div>
+                    </div>
+                    <div class="ranks__steps_content">
+                        <div class="ranks__steps_item active" data-slider-content="1">
+                            <div class="ranks__steps_item_number"> 01</div>
+                            <ul>
+                                <li>• Основы технического и фундаментального анализа</li>
+                                <li>• Помощь в выборе подходящей биржи</li>
+                                <li>• Помощь в выбор где хранить и торговать криптовалютой</li>
+                                <li>• Подбор индивидуального вида торговли</li>
+                            </ul>
+                        </div>
+                        <div class="ranks__steps_item" data-slider-content="2">
+                            <div class="ranks__steps_item_number"> 02</div>
+                            <ul>
+                                <li>• Инструменты технического анализа</li>
+                                <li>• Постулаты технического анализа</li>
+                                <li>• Обзор трендов криптовалют. Способы анализа</li>
+                                <li>• Уровни поддержки и сопротивления.</li>
+                                <li>• Графическая аналитика</li>
+                            </ul>
+                        </div>
+                        <div class="ranks__steps_item" data-slider-content="3">
+                            <div class="ranks__steps_item_number"> 03</div>
+                            <ul>
+                                <li>• Волновая теория Эллиота</li>
+                                <li>• Уровни фибоначчи и их применение</li>
+                                <li>• Обзор паттернов. Анализ и применение</li>
+                            </ul>
+                        </div>
+                        <div class="ranks__steps_item" data-slider-content="4">
+                            <div class="ranks__steps_item_number"> 04</div>
+                            <ul>
+                                <li>• Волновая теория Эллиота</li>
+                                <li>• Уровни фибоначчи и их применение</li>
+                                <li>• Обзор паттернов. Анализ и применение</li>
+                            </ul>
+                        </div>
+                        <div class="ranks__steps_arrows">
+                            <div class="ranks__steps_arrows_left" data-slider-prev><img src="img/svg/Arrow-left.svg" alt=""></div>
+                            <div class="ranks__steps_arrows_right" data-slider-next><img src="img/svg/Arrow-right.svg" alt=""></div>
+                        </div>
+                    </div>
+                </div>
+                <div class="ranks__descr">
+                    Благодаря нашему курсы вы получите стартовую базу знаний по техническому и фундаментальному анализу не рискуя большими деньгами.
+                </div>
+                <div class="ranks__subscribe">ЗАПИСАТЬСЯ НА КУРС <img src="img/svg/Arrow-right.svg" alt=""></div>
+                <form class="main-form secondary">
+                    <input name="login" type="text" placeholder="Ваше имя" data-pattern="login" data-error-text="Недопустимый формат имени">
+                    <input name="phone" class="phone-input" type="text" placeholder="Ваше телефон" data-pattern="phone" data-error-text="Недопустимый формат номера">
+                    <input name="email" type="text" placeholder="Ваше email" data-pattern="email" data-error-text="Недопустимый формат email">
+                    <button class="btn">ЗАПИСАТЬСЯ</button>
+                </form>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer__left">
+                <img src="img/png/logo.png" alt=""> <div class="footer__text">Mates Academy & Alex Nazarov</div>
+            </div>
+            <div class="footer__right">
+                <div class="footer__text">Телефон : <a href="tel:+380999999999">+38 099 999 99 99 </a></div>
+                <div class="footer__text">Сайт <a href=""> www.mates.academy</a></div>
+            </div>
+        </div>
+    </footer>
+    <div class="modal-overlay" id="modal-overlay"></div>
+    <div class="modal" data-modal="thx">
+        <div class="modal-body">
+            <div class="modal-logo"><img class="modal-logo" src="img/svg/THX.svg"></div>
+            <div class="modal-text">
+                Спасибо за проявленный интерес к нашему курсу! В ближайшее время наш менеджер свяжеться с вами.
+            </div>
+            <button class="btn">OK</button>
+        </div>
+    </div>
+    <div class="modal" data-modal="video">
+        <div class="modal-body">
+           <iframe src="https://www.youtube.com/embed/Len0qLhmhL0" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
+        </div>
+    </div>
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery.mask.min.js"></script>
+    <script src="js/core.js"></script>
+    <script src="js/all.js"></script>
+</body>
+
+</html>

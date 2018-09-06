@@ -1,0 +1,28 @@
+.footer{
+	background: #4a4a4a;
+	height: $footer-height;
+	margin-top: 50px;
+
+	.container {
+		display: flex;
+		justify-content: space-between;
+		padding: 30px 20px;
+	}
+	&__left {
+		
+		img {
+			width: 100px;
+		}
+	}
+	&__right {
+	
+	}
+	&__text {
+		font-family: Lato;
+		font-size: 18px;
+		font-weight: bold;
+		line-height: 1.56;
+		letter-spacing: 0.5px;
+		color: #ffffff;
+	}
+}
