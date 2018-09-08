@@ -13,6 +13,7 @@
     justify-content: center;
     align-items: center;
     &-body {
+        width: 100%;
         min-width: 280px;
         min-height: 100px;
         position: relative;
@@ -28,6 +29,7 @@
         }
     }
     &-logo {
+        margin: 75px 0 0px 0;
         img {
             display: block;
             margin: auto;
@@ -35,7 +37,7 @@
         }
     }
     &-text {
-        margin-top: 40px;
+        margin-top: 50px;
         font-family: BebasNeue;
         font-size: 36px;
         line-height: 1.06;
@@ -51,12 +53,6 @@
                 margin: auto;
                 display: block;
             }
-        }
-        .socials {
-            width: 76%;
-            margin: 30px auto 0;
-            display: flex;
-            justify-content: space-between;
         }
     }
     &[data-modal="video"] {
@@ -86,15 +82,16 @@
     }
 
     .btn {
-            margin: 30px auto 0;
-            display: block;
-
-          width: 160px;
-          height: 38px;
-          // border-radius: 2px;
-          // border: solid 1px transparent;
-          // background-image: linear-gradient(103deg, #1d3ede, #01e4f8), linear-gradient(103deg, #215878, #2094d5);
-        
+        margin: 52px auto 7px;
+        display: block;
+        font-size: 18px;
+        width: 160px;
+        height: 38px;
+        border-radius: 2px;
+        border: solid 1px transparent;
+        border: 1px solid #2192d2;
+        background-image: linear-gradient(103deg, #1d3ede, #01e4f8), linear-gradient(103deg, #215878, #2094d5);
+        border-image: linear-gradient(to right, #215878, #2094d5) 1 20%;
     }
 
     &__close {
@@ -139,7 +136,6 @@
             visibility: visible;
         }
     }
-
 }
 
 @media screen and (max-width: 1280px) {
@@ -186,11 +182,11 @@
             }
         }
     }
- 
+
     .modal .modal-body {
         padding: 20px!important;
-  
-        width: calc(100% - 40px); 
+
+        width: calc(100% - 40px);
     }
 }
 
@@ -213,7 +209,7 @@
     }
 }
 
-@media screen and (max-width: 375px) { 
+@media screen and (max-width: 375px) {
     .modal {
         &[data-modal="video"] {
             .modal-body {

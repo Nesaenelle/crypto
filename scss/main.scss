@@ -16,6 +16,11 @@ main {
     margin: auto;
 }
 
+.phone-number {
+    &:hover {
+        text-decoration: underline;
+    }
+}
 
 .title-2 {
     color: #f48a31;
@@ -34,6 +39,10 @@ main {
     letter-spacing: 1.5px;
     color: #4a4a4a;
     text-transform: uppercase;
+    &.strong {
+        font-size: 14px;
+        letter-spacing: 2.5px;
+    }
 }
 
 .video-banner {
@@ -196,33 +205,60 @@ main {
         right: 20px;
         position: absolute;
         z-index: 10;
-        box-shadow: 0 0 10px 0 #000;
+        box-shadow: 1px 1px 21px -7px #000;
         border-radius: 3px;
         overflow: hidden;
         &_item {
-            padding: 15px 15px 15px 40px;
+            padding: 17px 15px 8px 40px;
             display: flex;
             $c: &;
-            &:nth-child(1) #{$c}_img {
+            &:nth-child(1) #{$c}_img:after {
                 background: url(../img/svg/web.svg);
                 background-size: cover;
+                width: 66px;
+                height: 56px;
+                left: -4px;
+                top: -25px;
             }
-            &:nth-child(2) #{$c}_img {
+            &:nth-child(2) #{$c}_img:after {
                 background: url(../img/svg/close.svg);
                 background-size: cover;
+                width: 41px;
+                height: 41px;
+                left: -1px;
+                top: -25px;
             }
-            &:nth-child(3) #{$c}_img {
+            &:nth-child(3) #{$c}_img:after {
                 background: url(../img/svg/faq.svg);
                 background-size: cover;
+                width: 64px;
+                height: 55px;
+                left: -4px;
+                top: -30px;
             }
-            &:nth-child(4) #{$c}_img {
+            &:nth-child(4) #{$c}_img:after {
                 background: url(../img/svg/homework.svg);
                 background-size: cover;
+                width: 42px;
+                height: 40px;
+                left: -10px;
+                top: -30px;
             }
             &_img {
                 min-width: 60px;
                 height: 60px;
                 margin-right: 3px;
+                position: relative;
+                &:after {
+                    content: '';
+                    position: absolute;
+                    left: 0;
+                    right: 0;
+                    bottom: 0;
+                    top: 0;
+                    margin: auto;
+                    display: block;
+                }
             }
             &_title {
 
@@ -246,6 +282,7 @@ main {
     .bonus {
         width: 100%;
         position: static;
+        margin-top: 17px;
     }
 }
 
@@ -257,14 +294,14 @@ main {
 
     &__steps {
         padding: 0 95px;
-        margin-top: 68px;
+        margin-top: 66px;
         user-select: none;
+        overflow: hidden;
+        position: relative;
         &_content {
-            background: rgba(155, 155, 155, 0.1);
-            height: 475px;
-            padding: 30px;
-            position: relative;
             margin-top: 15px;
+            overflow: hidden;
+            font-size: 0;
         }
         &_tabs {
             display: flex;
@@ -283,12 +320,16 @@ main {
                 }
             }
         }
+        &_scroller {
+            display: flex;
+            transition: 0.3s;
+        }
         &_arrows {
 
             &_left,
             &_right {
                 position: absolute;
-                top: 0;
+                top: 35px;
                 margin: auto;
                 bottom: 0;
                 height: 14px;
@@ -315,17 +356,22 @@ main {
                 }
             }
             &_left {
-                left: -70px;
+                left: 25px;
             }
             &_right {
-                right: -70px;
+                right: 25px;
             }
         }
         &_item {
-            display: none;
-            &.active {
-                display: block;
-            }
+            // display: none;
+            // &.active {
+            //     display: block;
+            // }
+            padding: 30px;
+            background-color: rgba(155, 155, 155, 0.1);
+            min-width: 100%;
+            position: relative;
+            height: 475px;
             &_number {
                 position: absolute;
                 font-family: BebasNeue;
@@ -334,8 +380,7 @@ main {
                 font-weight: bold;
                 color: #d8d8d8;
                 top: 64px;
-                left: 30px;
-                // letter-spacing: -30px;
+                left: 30px; // letter-spacing: -30px;
                 pointer-events: none;
             }
             ul {

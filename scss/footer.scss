@@ -1,12 +1,12 @@
 .footer{
 	background: #4a4a4a;
-	height: $footer-height;
+	// height: $footer-height;
 	margin-top: 56px;
 
 	.container {
 		display: flex;
 		justify-content: space-between;
-		padding: 54px 20px;
+		padding: 54px 20px 37px 20px;
 	}
 	&__left {
 		

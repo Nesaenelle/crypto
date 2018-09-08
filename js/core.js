@@ -57,6 +57,10 @@
         return this.el.style.display = 'block';
     };
 
+    ELEM.prototype.style = function(name, val) {
+        this.el.style[name] = val;
+    };
+
     function SELECTOR() {
 
     };

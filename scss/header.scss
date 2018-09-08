@@ -5,7 +5,7 @@
     height: $header-height;
     padding-top: 55px;
     background-position: center;
-    
+
     .container {
         display: flex;
         justify-content: space-between;
@@ -26,18 +26,30 @@
         position: absolute;
         display: flex;
         justify-content: space-between;
-        left: 0;
-        top: 0;
+        font-family: BebasNeue;
+        left: 37px;
+        top: 17px;
         bottom: 0;
         margin: auto;
         transform: rotate(90deg);
-        width: 140px;
+        width: 126px;
         height: 0;
         transform-origin: left top 0;
-         a{
-            font-size: 10px;
+        a {
+            font-size: 12px;
             color: #023753;
-         }
+            letter-spacing: 1.5px; // transition: 0.2s;
+            // font-weight: 400;
+            position: relative;
+            &:hover {
+                color: #000;
+                font-weight: 600;
+            }
+        }
+        b {
+            font-size: 10px;
+            line-height: 14px;
+        }
     }
     .logo {
         width: 155px;
@@ -94,9 +106,12 @@
         font-weight: bold;
         letter-spacing: 3.3px;
         text-align: center;
-        padding: 25px 10px 0 0;
-        // background-clip: text;
+        padding: 25px 10px 0 0; // background-clip: text;
         // -webkit-text-fill-color: transparent;
+        transition: 0.3s;
+        &:hover {
+            background-image: linear-gradient(98deg, darken(#215878, 10%), darken(#2094d5, 10%));
+        }
     }
     .main-form {
         margin-top: 78px;

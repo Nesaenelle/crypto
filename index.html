@@ -6,10 +6,6 @@
     <title>dashboard</title>
     <link rel="stylesheet" href="style.css">
     <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no, maximum-scale=1">
-    <!--     <link rel="stylesheet" href="https://unpkg.com/simplebar@latest/dist/simplebar.css" />
-    <link rel="stylesheet" href="//code.jquery.com/ui/1.12.1/themes/base/jquery-ui.css"> -->
-<!--     <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900&amp;subset=latin-ext" rel="stylesheet"> -->
 </head>
 
 <body>
@@ -17,11 +13,11 @@
 
         <div class="container top">
             <div class="logo"><img src="img/png/logo.png" alt=""></div>
-            <div class="phone"><a href="tel:+380999999999">+38 099 999 99 99 </a></div>
+            <div class="phone"><a href="tel:+380999999999" class="phone-number">+38 099 999 99 99 </a></div>
         </div>
         <div class="container middle">
             <div class="socials">
-                <a href="">FACEBOOK</a><a href="">INSTAGRAM</a>
+                <a href="">FACEBOOK</a><b>.</b><a href="">INSTAGRAM</a>
             </div>
 
             <div class="subtitle">Mates Academy & Alex Nazarov</div>
@@ -85,7 +81,7 @@
                     <div class="advantages__list">
                         <div class="advantages__list_item">
                             <div class="advantages__list_item_img"></div>
-                            <div class="advantages__list_item_title"><b>Вебинары</b> Еженедельные обучающие тренинги. Тренды и тенденции</div>
+                            <div class="advantages__list_item_title"><b>Вебинары</b> Еженедельные обучающие тренинги. <br>Тренды и тенденции</div>
                         </div>
                         <div class="advantages__list_item">
                             <div class="advantages__list_item_img"></div>
@@ -93,11 +89,11 @@
                         </div>
                         <div class="advantages__list_item">
                             <div class="advantages__list_item_img"></div>
-                            <div class="advantages__list_item_title"><b>F.A.Q.</b> Доступ к базе терминов и ответов на вопросы по тематике курса</div>
+                            <div class="advantages__list_item_title"><b>F.A.Q.</b> Доступ к базе терминов и ответов на вопросы <br>по тематике курса</div>
                         </div>
                         <div class="advantages__list_item">
                             <div class="advantages__list_item_img"></div>
-                            <div class="advantages__list_item_title"><b>Практика со студентами</b> Еженедельные задания с дальнейшей проверкой и обсуждением ошибок</div>
+                            <div class="advantages__list_item_title"><b>Практика со студентами</b> Еженедельные задания с дальнейшей проверкой <br> и обсуждением ошибок</div>
                         </div>
                         <div class="bonus">
                             <div class="bonus__title">+БОНУС</div>
@@ -112,7 +108,7 @@
         </div>
         <div class="ranks">
             <div class="container">
-                <div class="title-small">Ваши будущие скиллы</div>
+                <div class="title-small strong">Ваши будущие скиллы</div>
                 <h2 class="title-2">Какие зания вы получите, Пройдя наш курс? </h2>
                 <div class="ranks__steps" data-slider>
                     <div class="ranks__steps_tabs">
@@ -121,47 +117,51 @@
                         <div class="ranks__steps_tabs_item" data-slider-tab="3">теория расчетов</div>
                         <div class="ranks__steps_tabs_item" data-slider-tab="4">практика и инструменты</div>
                     </div>
-                    <div class="ranks__steps_content">
-                        <div class="ranks__steps_item active" data-slider-content="1">
-                            <div class="ranks__steps_item_number"> 01</div>
-                            <ul>
-                                <li><b>•</b> Основы технического и фундаментального анализа</li>
-                                <li><b>•</b> Помощь в выборе подходящей биржи</li>
-                                <li><b>•</b> Помощь в выбор где хранить и торговать криптовалютой</li>
-                                <li><b>•</b> Подбор индивидуального вида торговли</li>
-                            </ul>
+            
+                        <div class="ranks__steps_content">
+                            <div class="ranks__steps_scroller" data-slider-scroller>    
+                            <div class="ranks__steps_item active" data-slider-content="1">
+                                <div class="ranks__steps_item_number"> 01</div>
+                                <ul>
+                                    <li><b>•</b> Основы технического и фундаментального анализа</li>
+                                    <li><b>•</b> Помощь в выборе подходящей биржи</li>
+                                    <li><b>•</b> Помощь в выбор где хранить и торговать криптовалютой</li>
+                                    <li><b>•</b> Подбор индивидуального вида торговли</li>
+                                </ul>
+                            </div>
+                            <div class="ranks__steps_item" data-slider-content="2">
+                                <div class="ranks__steps_item_number"> 02</div>
+                                <ul>
+                                    <li><b>•</b> Инструменты технического анализа</li>
+                                    <li><b>•</b> Постулаты технического анализа</li>
+                                    <li><b>•</b> Обзор трендов криптовалют. Способы анализа</li>
+                                    <li><b>•</b> Уровни поддержки и сопротивления.</li>
+                                    <li><b>•</b> Графическая аналитика</li>
+                                </ul>
+                            </div>
+                            <div class="ranks__steps_item" data-slider-content="3">
+                                <div class="ranks__steps_item_number"> 03</div>
+                                <ul>
+                                    <li><b>•</b> Волновая теория Эллиота</li>
+                                    <li><b>•</b> Уровни фибоначчи и их применение</li>
+                                    <li><b>•</b> Обзор паттернов. Анализ и применение</li>
+                                </ul>
+                            </div>
+                            <div class="ranks__steps_item" data-slider-content="4">
+                                <div class="ranks__steps_item_number"> 04</div>
+                                <ul>
+                                    <li><b>•</b> Волновая теория Эллиота</li>
+                                    <li><b>•</b> Уровни фибоначчи и их применение</li>
+                                    <li><b>•</b> Обзор паттернов. Анализ и применение</li>
+                                </ul>
+                            </div>
+
+                              </div>
                         </div>
-                        <div class="ranks__steps_item" data-slider-content="2">
-                            <div class="ranks__steps_item_number"> 02</div>
-                            <ul>
-                                <li><b>•</b> Инструменты технического анализа</li>
-                                <li><b>•</b> Постулаты технического анализа</li>
-                                <li><b>•</b> Обзор трендов криптовалют. Способы анализа</li>
-                                <li><b>•</b> Уровни поддержки и сопротивления.</li>
-                                <li><b>•</b> Графическая аналитика</li>
-                            </ul>
-                        </div>
-                        <div class="ranks__steps_item" data-slider-content="3">
-                            <div class="ranks__steps_item_number"> 03</div>
-                            <ul>
-                                <li><b>•</b> Волновая теория Эллиота</li>
-                                <li><b>•</b> Уровни фибоначчи и их применение</li>
-                                <li><b>•</b> Обзор паттернов. Анализ и применение</li>
-                            </ul>
-                        </div>
-                        <div class="ranks__steps_item" data-slider-content="4">
-                            <div class="ranks__steps_item_number"> 04</div>
-                            <ul>
-                                <li><b>•</b> Волновая теория Эллиота</li>
-                                <li><b>•</b> Уровни фибоначчи и их применение</li>
-                                <li><b>•</b> Обзор паттернов. Анализ и применение</li>
-                            </ul>
-                        </div>
-                        <div class="ranks__steps_arrows">
-                            <div class="ranks__steps_arrows_left hidden" data-slider-prev><img src="img/svg/Arrow-left.svg" alt=""></div>
-                            <div class="ranks__steps_arrows_right" data-slider-next><img src="img/svg/Arrow-right.svg" alt=""></div>
-                        </div>
-                    </div>
+                    <!-- <div class="ranks__steps_arrows"> -->
+                        <div class="ranks__steps_arrows_left hidden" data-slider-prev><img src="img/svg/Arrow-left.svg" alt=""></div>
+                        <div class="ranks__steps_arrows_right" data-slider-next><img src="img/svg/Arrow-right.svg" alt=""></div>
+                    <!-- </div> -->
                 </div>
                 <div class="ranks__descr">
                     Благодаря нашему курсы вы получите стартовую базу знаний по техническому и фундаментальному анализу не рискуя большими деньгами.
@@ -182,7 +182,7 @@
                 <img src="img/png/footer-logo.png" alt=""> <div class="footer__text">Mates Academy & Alex Nazarov</div>
             </div>
             <div class="footer__right">
-                <div class="footer__text">Телефон : <a href="tel:+380999999999">+38 099 999 99 99 </a></div>
+                <div class="footer__text">Телефон : <a href="tel:+380999999999" class="phone-number">+38 099 999 99 99 </a></div>
                 <div class="footer__text">Сайт <a href=""> www.mates.academy</a></div>
             </div>
         </div>
@@ -192,7 +192,7 @@
         <div class="modal-body">
             <div class="modal-logo"><img class="modal-logo" src="img/svg/THX.svg"></div>
             <div class="modal-text">
-                Спасибо за проявленный интерес к нашему курсу! В ближайшее время наш менеджер свяжеться с вами.
+                Спасибо за проявленный интерес к нашему курсу! <br>В ближайшее время<br> наш менеджер свяжеться с вами.
             </div>
             <button class="btn">OK</button>
         </div>
