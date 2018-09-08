@@ -120,6 +120,76 @@
     });
 
 
+    NES_API.add('paralax', {
+        constructor: function() {        
+            var counterItems = $.findAll('[data-paralax]');
+            var images = document.querySelector('.advantages__wrapper');
+
+            window.addEventListener('scroll', function(e) {
+                if (isInViewport(images)) {
+                    counterItems.forEach(function(item) {
+                        var val = (offset(images).top - window.pageYOffset) / 2 * parseFloat(item.getAttr('data-paralax')); //checkScrollSpeed() + 'px';
+                        item.style('transform', 'translateY(' + val + 'px)');
+                    });
+                }
+            });
+
+            var checkScrollSpeed = (function(settings) {
+                settings = settings || {};
+
+                var lastPos, newPos, timer, delta,
+                    delay = settings.delay || 50; // in "ms" (higher means lower fidelity )
+
+                function clear() {
+                    lastPos = null;
+                    delta = 0;
+                }
+
+                clear();
+
+                return function() {
+                    newPos = window.scrollY;
+                    if (lastPos != null) { // && newPos < maxScroll 
+                        delta = newPos - lastPos;
+                    }
+                    lastPos = newPos;
+                    clearTimeout(timer);
+                    timer = setTimeout(clear, delay);
+                    return delta;
+                };
+            })();
+        }
+    });
+
+
+    function offset(el) {
+        var rect = el.getBoundingClientRect(),
+            scrollLeft = window.pageXOffset || document.documentElement.scrollLeft,
+            scrollTop = window.pageYOffset || document.documentElement.scrollTop;
+        return { top: rect.top + scrollTop, left: rect.left + scrollLeft }
+    }
+
+    function isInViewport(el) {
+        var top = el.offsetTop;
+        var left = el.offsetLeft;
+        var width = el.offsetWidth;
+        var height = el.offsetHeight;
+
+        while (el.offsetParent) {
+            el = el.offsetParent;
+            top += el.offsetTop;
+            left += el.offsetLeft;
+        }
+
+        return (
+            top < (window.pageYOffset + window.innerHeight) &&
+            left < (window.pageXOffset + window.innerWidth) &&
+            (top + height) > window.pageYOffset &&
+            (left + width) > window.pageXOffset
+        );
+    };
+
+
     function Form(form) {
         var self = this;
         this.controls = [];

@@ -276,6 +276,7 @@
         // right: 0;
         margin: 30px auto 0;
         position: static;
+        transform: none!important;
         .bonus {
             flex-wrap: wrap;
             &__title {
