@@ -48,7 +48,7 @@ main {
 .video-banner {
     height: 138px;
     position: relative;
-    background: url(../img/png/berkeley.jpg);
+    background: url(img/png/berkeley.jpg);
     background-size: cover;
     background-position: center;
 
@@ -132,13 +132,13 @@ main {
             &:hover {
                 #{$c}_img {
                     &.first {
-                        background: url(../img/png/img_1_hover.png) no-repeat;
+                        background: url(img/png/img_1_hover.png) no-repeat;
                     }
                     &.second {
-                        background: url(../img/png/img_2_hover.png) no-repeat;
+                        background: url(img/png/img_2_hover.png) no-repeat;
                     }
                     &.third {
-                        background: url(../img/png/img_3_hover.png) no-repeat;
+                        background: url(img/png/img_3_hover.png) no-repeat;
                     }
                 }
             }
@@ -168,21 +168,21 @@ main {
                 background-size: cover!important;
                 transition: background 0.3s ease;
                 &.first {
-                    background: url(../img/png/img_1_no_active.png) no-repeat;
+                    background: url(img/png/img_1_no_active.png) no-repeat;
                     &:hover {
-                        background: url(../img/png/img_1_hover.png) no-repeat;
+                        background: url(img/png/img_1_hover.png) no-repeat;
                     }
                 }
                 &.second {
-                    background: url(../img/png/img_2_no_active.png) no-repeat;
+                    background: url(img/png/img_2_no_active.png) no-repeat;
                     &:hover {
-                        background: url(../img/png/img_2_hover.png) no-repeat;
+                        background: url(img/png/img_2_hover.png) no-repeat;
                     }
                 }
                 &.third {
-                    background: url(../img/png/img_3_no_active.png) no-repeat;
+                    background: url(img/png/img_3_no_active.png) no-repeat;
                     &:hover {
-                        background: url(../img/png/img_3_hover.png) no-repeat;
+                        background: url(img/png/img_3_hover.png) no-repeat;
                     }
                 }
             }
@@ -223,7 +223,7 @@ main {
             display: flex;
             $c: &;
             &:nth-child(1) #{$c}_img:after {
-                background: url(../img/svg/web.svg);
+                background: url(img/svg/web.svg);
                 background-size: cover;
                 width: 66px;
                 height: 56px;
@@ -231,7 +231,7 @@ main {
                 top: -25px;
             }
             &:nth-child(2) #{$c}_img:after {
-                background: url(../img/svg/close.svg);
+                background: url(img/svg/close.svg);
                 background-size: cover;
                 width: 41px;
                 height: 41px;
@@ -239,7 +239,7 @@ main {
                 top: -25px;
             }
             &:nth-child(3) #{$c}_img:after {
-                background: url(../img/svg/faq.svg);
+                background: url(img/svg/faq.svg);
                 background-size: cover;
                 width: 64px;
                 height: 55px;
@@ -247,7 +247,7 @@ main {
                 top: -30px;
             }
             &:nth-child(4) #{$c}_img:after {
-                background: url(../img/svg/homework.svg);
+                background: url(img/svg/homework.svg);
                 background-size: cover;
                 width: 42px;
                 height: 40px;
