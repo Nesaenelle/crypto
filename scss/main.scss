@@ -86,7 +86,17 @@ main {
     display: flex;
     align-items: center;
     width: 474px;
-
+    &.mobile {
+        position: static;
+        width: 100%;    
+        padding: 13px 20px 13px 20px;
+        .bonus__title {
+            font-size: 30px;
+        }
+        .bonus__text {
+            font-size: 20px;
+        }
+    }
     &__text {
         font-family: BebasNeue;
         font-size: 24px;
@@ -283,6 +293,9 @@ main {
         width: 100%;
         position: static;
         margin-top: 17px;
+        &__title {
+            margin-right: 29px;
+        }
     }
 }
 
@@ -298,10 +311,20 @@ main {
         user-select: none;
         overflow: hidden;
         position: relative;
+        &.mobile {
+            margin-top: 0px;
+            .ranks__steps_tabs_item {
+                margin: 25px 0 10px 0;
+            }
+            .ranks__steps_item {
+                height: auto;
+            }
+        }
         &_content {
             margin-top: 15px;
             overflow: hidden;
             font-size: 0;
+            width: 100%;
         }
         &_tabs {
             display: flex;
@@ -387,6 +410,8 @@ main {
                 margin-top: 208px;
                 margin-left: 111px;
                 position: relative;
+                // position: absolute;
+                // bottom: 20px;
                 li {
                     font-family: 'Lato';
                     font-size: 24px; // line-height: 1.46;
@@ -443,6 +468,7 @@ main {
     }
     .btn {
         width: 115px;
+        height: 38px;
     }
     input {
 

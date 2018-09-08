@@ -10,13 +10,11 @@
             this.leftArrow = this.slider.find('[data-slider-prev]');
             this.rightArrow = this.slider.find('[data-slider-next]');
             this.scroller = this.slider.find('[data-slider-scroller]');
-            this.slideWidth = 920 || this.slider.el.offsetWidth;
+            this.slideWidth = this.scroller.el.offsetWidth;
             this.activeIndex = 1;
 
             this.tabs.forEach(function(tab) {
                 tab.addEvent('click', function(e) {
-                    // self.tabs.forEach(function(a) { a.removeClass('active') });
-                    // tab.addClass('active');
                     var id = e.target.getAttribute('data-slider-tab');
                     self.activeIndex = id;
                     self.show();
@@ -38,14 +36,14 @@
                 self.show();
             });
             this.updateArrows();
+            window.addEventListener('resize', function() {
+                self.slideWidth = self.scroller.el.offsetWidth;
+                self.show();console.log(123);
+            });
         },
 
         show() {
             var self = this;
-            // this.contents.forEach(function(content) {
-            //     var contentId = content.getAttr('data-slider-content');
-            //     (contentId == self.activeIndex) ? (content.addClass('active')) : (content.removeClass('active'));
-            // });
             var offset = -this.slideWidth * (this.activeIndex - 1);
             this.scroller.style('transform', 'translateX(' + offset + 'px)');
 
@@ -97,7 +95,9 @@
             if (this.activeModal) {
                 this.activeModal.removeClass('opened');
                 this.modalOverlay.removeClass('opened');
-                this.activeModal.find('.btn').removeEvent('click', this.onBtnClick.bind(this));
+                if(this.activeModal.find('.btn')) {
+                    this.activeModal.find('.btn').removeEvent('click', this.onBtnClick.bind(this));
+                }
             }
         },
 
@@ -108,7 +108,10 @@
             this.activeModal = $.find('.modal[data-modal="' + id + '"]');
             this.activeModal.addClass('opened');
 
-            this.activeModal.find('.btn').addEvent('click', this.onBtnClick.bind(this));
+            if(this.activeModal.find('.btn')) {
+                this.activeModal.find('.btn').addEvent('click', this.onBtnClick.bind(this));
+            }
+
         },
 
         onBtnClick: function() {

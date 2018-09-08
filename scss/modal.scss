@@ -172,7 +172,7 @@
     }
 }
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 680px) {
     .modal {
         &[data-modal="video"] {
             .modal-body {
@@ -181,8 +181,18 @@
                 max-height: 270px;
             }
         }
-    }
+    }   
 
+    .modal .modal-text {
+        font-size: 26px;
+        margin-top: 35px;
+    }
+    .modal .btn {
+        margin: 30px auto 7px;
+    }
+    .modal .modal-logo {
+        margin: 20px auto 0;
+    }
     .modal .modal-body {
         padding: 20px!important;
 
