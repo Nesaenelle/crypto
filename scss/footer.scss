@@ -6,7 +6,7 @@
 	.container {
 		display: flex;
 		justify-content: space-between;
-		padding: 54px 20px 37px 20px;
+		padding: 54px 40px 37px 40px;
 	}
 	&__left {
 		
@@ -31,5 +31,10 @@
 		line-height: 1.56;
 		letter-spacing: 0.5px;
 		color: #ffffff;
+		a {
+			&:hover {
+				text-decoration: underline;
+			}
+		}
 	}
 }

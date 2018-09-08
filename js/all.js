@@ -38,7 +38,7 @@
             this.updateArrows();
             window.addEventListener('resize', function() {
                 self.slideWidth = self.scroller.el.offsetWidth;
-                self.show();console.log(123);
+                self.show();
             });
         },
 
@@ -63,7 +63,7 @@
             var self = this;
             this.popupBtns = $.findAll('[data-modal-open]');
             this.modalOverlay = $.find('#modal-overlay');
-            this.closeBtns = $.findAll('.js-close-modal');
+            this.closeBtns = $.findAll('[data-modal-close]');
             this.activeModal;
 
             this.popupBtns.forEach(function(btn) {

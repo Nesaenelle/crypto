@@ -11,8 +11,8 @@ main {
 }
 
 .container {
-    max-width: 1150px;
-    padding: 0 20px;
+    max-width: 1190px;
+    padding: 0 40px;
     margin: auto;
 }
 
@@ -57,7 +57,7 @@ main {
         position: relative;
         display: flex;
         align-items: center; // justify-content: space-between;
-        padding-left: 114px;
+        padding-left: 136px;
     }
     &__text {
         cursor: pointer;
@@ -80,7 +80,7 @@ main {
 .bonus {
     position: absolute;
     top: -42px;
-    right: 20px;
+    right: 40px;
     background: #023753;
     padding: 13px 20px 13px 30px;
     display: flex;
@@ -212,7 +212,7 @@ main {
         top: 203px;
         width: 599px;
         background: #fff;
-        right: 20px;
+        right: 40px;
         position: absolute;
         z-index: 10;
         box-shadow: 1px 1px 21px -7px #000;
@@ -301,6 +301,7 @@ main {
 
 .ranks {
     margin-top: 211px;
+    overflow: hidden;
     .title-2 {
         margin-top: 38px;
     }
@@ -309,7 +310,7 @@ main {
         padding: 0 95px;
         margin-top: 66px;
         user-select: none;
-        overflow: hidden;
+        // overflow: hidden;
         position: relative;
         &.mobile {
             margin-top: 0px;
