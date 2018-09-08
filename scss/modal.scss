@@ -147,13 +147,16 @@
             }
         }
     }
+    .modal[data-modal=video] .modal-body .modal__close {
+        right: 0;   
+    }
 }
 
 @media screen and (max-width:980px) {
     .modal {
         &[data-modal="video"] {
             .modal-body {
-                overflow: hidden;
+                // overflow: hidden;
                 max-width: 780px;
                 max-height: 432px;
             }
