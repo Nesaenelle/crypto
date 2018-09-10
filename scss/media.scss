@@ -109,6 +109,9 @@
         width: 100%;
         font-size: 30px;
     }
+    .ranks__steps_item ul {
+        margin-left: 80px;
+    }
     .ranks__steps_item ul li {
         font-size: 20px;
         line-height: 24px;
@@ -156,7 +159,7 @@
         }
         &__steps_item_number {
             font-size: 250px;
-            line-height: 150px;
+            // line-height: 150px;
         }
     }
     .footer {
@@ -182,7 +185,7 @@
     }
     .ranks__steps_item_number {
         font-size: 200px;
-        line-height: 100px;
+        // line-height: 100px;
     }
     .advantages__bg img {
         width: 100%;
@@ -325,8 +328,9 @@
     }
     .ranks__steps_item_number {
         font-size: 150px;
-        top: 20px;
-        line-height: 100px;
+        // top: 20px;
+        top: 0;
+        // line-height: 100px;
     }
     .ranks__steps_item ul {
         margin: 60px auto;
