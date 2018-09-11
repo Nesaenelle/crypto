@@ -88,7 +88,7 @@ main {
     width: 474px;
     &.mobile {
         position: static;
-        width: 100%;    
+        width: 100%;
         padding: 13px 20px 13px 20px;
         .bonus__title {
             font-size: 30px;
@@ -309,8 +309,7 @@ main {
     &__steps {
         padding: 0 95px;
         margin-top: 66px;
-        user-select: none;
-        // overflow: hidden;
+        user-select: none; // overflow: hidden;
         position: relative;
         &.mobile {
             margin-top: 0px;
@@ -399,8 +398,7 @@ main {
             &_number {
                 position: absolute;
                 font-family: BebasNeue;
-                font-size: 300px;
-                // line-height: 170px;
+                font-size: 300px; // line-height: 170px;
                 font-weight: bold;
                 color: #d8d8d8;
                 top: 0px;
@@ -410,8 +408,7 @@ main {
             ul {
                 margin-top: 208px;
                 margin-left: 111px;
-                position: relative;
-                // position: absolute;
+                position: relative; // position: absolute;
                 // bottom: 20px;
                 li {
                     font-family: 'Lato';
@@ -471,6 +468,7 @@ main {
         width: 115px;
         height: 38px;
     }
+
     input {
 
         width: 225px;
@@ -488,6 +486,9 @@ main {
         // &.valid {
         //     background: green;
         // }
+        &:focus {
+            outline: none;
+        }
         &::placeholder {
             /* Chrome, Firefox, Opera, Safari 10.1+ */
             font-family: BebasNeue;
