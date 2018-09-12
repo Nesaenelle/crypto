@@ -98,6 +98,12 @@
                 if(this.activeModal.find('.btn')) {
                     this.activeModal.find('.btn').removeEvent('click', this.onBtnClick.bind(this));
                 }
+
+                if(this.activeModal.find('iframe')){
+                    var iframe = this.activeModal.find('iframe').el;
+                    var iframeSrc = iframe.src;
+                        iframe.src = iframeSrc;
+                }
             }
         },
 
