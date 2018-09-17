@@ -311,8 +311,9 @@ main {
         margin-top: 66px;
         user-select: none; // overflow: hidden;
         position: relative;
-        &.mobile {
+        &_mobile {
             margin-top: 0px;
+            display: none;
             .ranks__steps_tabs_item {
                 margin: 25px 0 10px 0;
             }
@@ -394,7 +395,7 @@ main {
             background-color: rgba(155, 155, 155, 0.1);
             min-width: 100%;
             position: relative;
-            height: 475px;
+            height: 530px;
             &_number {
                 position: absolute;
                 font-family: BebasNeue;
@@ -405,7 +406,7 @@ main {
                 left: 30px; // letter-spacing: -30px;
                 pointer-events: none;
             }
-            ul {
+            > ul {
                 margin-top: 208px;
                 margin-left: 111px;
                 position: relative; // position: absolute;
@@ -416,6 +417,9 @@ main {
                     letter-spacing: 1.5px;
                     color: #4a4a4a;
                     line-height: 32px;
+                    ul {
+                        margin-left: 70px;
+                    }
                     b {
                         font-size: 32px;
                         margin-right: 4px;

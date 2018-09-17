@@ -19,17 +19,15 @@
     .ranks__steps_item ul li {
         font-size: 22px;
     }
-    .ranks__steps {
-        padding: 0 30px;
+}
+@media screen and (max-width: 1120px) {
+    .ranks__steps_mobile {
+        display: block;
     }
-    .ranks__steps_arrows_right {
-        right: -10px;
-    }
-    .ranks__steps_arrows_left {
-        left: -10px;
+    .ranks__steps_desktop {
+        display: none;
     }
 }
-
 @media screen and (max-width: 980px) {
     .header .socials {
         display: none;
@@ -109,7 +107,7 @@
         width: 100%;
         font-size: 30px;
     }
-    .ranks__steps_item ul {
+    .ranks__steps_item > ul {
         margin-left: 80px;
     }
     .ranks__steps_item ul li {
@@ -154,7 +152,7 @@
             display: flex;
             justify-content: space-between;
         }
-        &__steps_item ul {
+        &__steps_item > ul {
             margin-top: 170px;
         }
         &__steps_item_number {
@@ -180,7 +178,7 @@
     .usefull__list_item_text {
         font-size: 20px;
     }
-    .ranks__steps_item ul {
+    .ranks__steps_item > ul {
         margin-top: 140px;
     }
     .ranks__steps_item_number {
@@ -332,18 +330,14 @@
         top: 0;
         // line-height: 100px;
     }
-    .ranks__steps_item ul {
-        margin: 60px auto;
+    .ranks__steps_item > ul {
+        margin: 60px auto 20px;
         width: 90%;
     }
     .ranks__steps_item {
         height: 300px;
     }
-    .ranks__steps_item ul {
-        // position: relative;
-        // bottom: auto;
-        margin-bottom: 20px;
-    }
+
     .ranks__steps_item ul li {
         font-size: 14px;
         line-height: 20px;
